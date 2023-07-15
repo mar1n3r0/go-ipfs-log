@@ -9,10 +9,10 @@ import (
 	"github.com/ipfs/go-cid"
 	format "github.com/ipfs/go-ipld-format"
 
-	"berty.tech/go-ipfs-log/errmsg"
-	idp "berty.tech/go-ipfs-log/identityprovider"
-	"berty.tech/go-ipfs-log/iface"
-	"berty.tech/go-ipfs-log/io/jsonable"
+	"github.com/stateless-minds/go-ipfs-log/errmsg"
+	idp "github.com/stateless-minds/go-ipfs-log/identityprovider"
+	"github.com/stateless-minds/go-ipfs-log/iface"
+	"github.com/stateless-minds/go-ipfs-log/io/jsonable"
 )
 
 type pb struct {

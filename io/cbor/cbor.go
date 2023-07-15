@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"math"
 
-	"berty.tech/go-ipfs-log/enc"
+	"github.com/stateless-minds/go-ipfs-log/enc"
 	"github.com/ipfs/go-ipld-cbor/encoding"
 
 	core_iface "github.com/ipfs/boxo/coreiface"
@@ -17,10 +17,10 @@ import (
 	ic "github.com/libp2p/go-libp2p/core/crypto"
 	"github.com/polydawn/refmt/obj/atlas"
 
-	"berty.tech/go-ipfs-log/errmsg"
-	"berty.tech/go-ipfs-log/identityprovider"
-	"berty.tech/go-ipfs-log/iface"
-	"berty.tech/go-ipfs-log/io/jsonable"
+	"github.com/stateless-minds/go-ipfs-log/errmsg"
+	"github.com/stateless-minds/go-ipfs-log/identityprovider"
+	"github.com/stateless-minds/go-ipfs-log/iface"
+	"github.com/stateless-minds/go-ipfs-log/io/jsonable"
 )
 
 type IOCbor struct {

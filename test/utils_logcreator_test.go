@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	ipfslog "berty.tech/go-ipfs-log"
-	idp "berty.tech/go-ipfs-log/identityprovider"
+	ipfslog "github.com/stateless-minds/go-ipfs-log"
+	idp "github.com/stateless-minds/go-ipfs-log/identityprovider"
 	core_iface "github.com/ipfs/boxo/coreiface"
 )
 

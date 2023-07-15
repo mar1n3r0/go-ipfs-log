@@ -6,9 +6,9 @@ import (
 	"math"
 	"testing"
 
-	ipfslog "berty.tech/go-ipfs-log"
-	idp "berty.tech/go-ipfs-log/identityprovider"
-	ks "berty.tech/go-ipfs-log/keystore"
+	ipfslog "github.com/stateless-minds/go-ipfs-log"
+	idp "github.com/stateless-minds/go-ipfs-log/identityprovider"
+	ks "github.com/stateless-minds/go-ipfs-log/keystore"
 	dssync "github.com/ipfs/go-datastore/sync"
 	mocknet "github.com/libp2p/go-libp2p/p2p/net/mock"
 	"github.com/stretchr/testify/require"

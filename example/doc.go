@@ -1,1 +1,1 @@
-package example // import "berty.tech/go-ipfs-log/example"
+package example // import "github.com/stateless-minds/go-ipfs-log/example"

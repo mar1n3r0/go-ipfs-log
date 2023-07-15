@@ -1,9 +1,9 @@
-package identityprovider // import "berty.tech/go-ipfs-log/identityprovider"
+package identityprovider // import "github.com/stateless-minds/go-ipfs-log/identityprovider"
 
 import (
 	"context"
 
-	"berty.tech/go-ipfs-log/keystore"
+	"github.com/stateless-minds/go-ipfs-log/keystore"
 	crypto "github.com/libp2p/go-libp2p/core/crypto"
 )
 

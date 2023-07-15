@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"berty.tech/go-ipfs-log/iface"
+	"github.com/stateless-minds/go-ipfs-log/iface"
 	core_iface "github.com/ipfs/boxo/coreiface"
 	"github.com/ipfs/go-datastore"
 	dssync "github.com/ipfs/go-datastore/sync"

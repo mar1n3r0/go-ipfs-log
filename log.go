@@ -1,5 +1,5 @@
 // Package ipfslog implements an append-only log CRDT on IPFS
-package ipfslog // import "berty.tech/go-ipfs-log"
+package ipfslog // import "github.com/stateless-minds/go-ipfs-log"
 
 import (
 	"context"
@@ -11,13 +11,13 @@ import (
 	core_iface "github.com/ipfs/boxo/coreiface"
 	"github.com/ipfs/go-cid"
 
-	"berty.tech/go-ipfs-log/accesscontroller"
-	"berty.tech/go-ipfs-log/entry"
-	"berty.tech/go-ipfs-log/entry/sorting"
-	"berty.tech/go-ipfs-log/errmsg"
-	"berty.tech/go-ipfs-log/identityprovider"
-	"berty.tech/go-ipfs-log/iface"
-	"berty.tech/go-ipfs-log/io/cbor"
+	"github.com/stateless-minds/go-ipfs-log/accesscontroller"
+	"github.com/stateless-minds/go-ipfs-log/entry"
+	"github.com/stateless-minds/go-ipfs-log/entry/sorting"
+	"github.com/stateless-minds/go-ipfs-log/errmsg"
+	"github.com/stateless-minds/go-ipfs-log/identityprovider"
+	"github.com/stateless-minds/go-ipfs-log/iface"
+	"github.com/stateless-minds/go-ipfs-log/io/cbor"
 )
 
 type Snapshot = iface.Snapshot

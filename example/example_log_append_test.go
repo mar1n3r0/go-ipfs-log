@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	idp "berty.tech/go-ipfs-log/identityprovider"
-	"berty.tech/go-ipfs-log/keystore"
+	idp "github.com/stateless-minds/go-ipfs-log/identityprovider"
+	"github.com/stateless-minds/go-ipfs-log/keystore"
 	"github.com/ipfs/go-datastore"
 	dssync "github.com/ipfs/go-datastore/sync"
 	config "github.com/ipfs/kubo/config"
@@ -19,7 +19,7 @@ import (
 	"github.com/libp2p/go-libp2p/core/peer"
 	pstore "github.com/libp2p/go-libp2p/core/peerstore"
 
-	log "berty.tech/go-ipfs-log"
+	log "github.com/stateless-minds/go-ipfs-log"
 )
 
 func buildHostOverrideExample(id peer.ID, ps pstore.Peerstore, options ...libp2p.Option) (host.Host, error) {

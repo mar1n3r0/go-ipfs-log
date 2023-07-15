@@ -5,9 +5,9 @@ import (
 	"sync"
 	"time"
 
-	"berty.tech/go-ipfs-log/identityprovider"
-	"berty.tech/go-ipfs-log/iface"
-	"berty.tech/go-ipfs-log/io/cbor"
+	"github.com/stateless-minds/go-ipfs-log/identityprovider"
+	"github.com/stateless-minds/go-ipfs-log/iface"
+	"github.com/stateless-minds/go-ipfs-log/io/cbor"
 	core_iface "github.com/ipfs/boxo/coreiface"
 	"github.com/ipfs/go-cid"
 	"golang.org/x/sync/semaphore"

@@ -8,8 +8,8 @@ import (
 	"github.com/ipfs/go-cid"
 	format "github.com/ipfs/go-ipld-format"
 
-	"berty.tech/go-ipfs-log/accesscontroller"
-	"berty.tech/go-ipfs-log/identityprovider"
+	"github.com/stateless-minds/go-ipfs-log/accesscontroller"
+	"github.com/stateless-minds/go-ipfs-log/identityprovider"
 )
 
 const KeyEncryptedLinks = "encrypted_links"
