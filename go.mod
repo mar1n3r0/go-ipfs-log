@@ -5,12 +5,12 @@ go 1.20
 require (
 	github.com/btcsuite/btcd v0.22.1
 	github.com/hashicorp/golang-lru v0.5.4
-	github.com/ipfs/boxo v0.10.2-0.20230629140307-fdad9f921191
+	github.com/ipfs/boxo v0.10.2
 	github.com/ipfs/go-cid v0.4.1
 	github.com/ipfs/go-datastore v0.6.0
 	github.com/ipfs/go-ipld-cbor v0.0.6
 	github.com/ipfs/go-ipld-format v0.5.0
-	github.com/ipfs/kubo v0.21.0-rc3
+	github.com/ipfs/kubo v0.21.0
 	github.com/libp2p/go-libp2p v0.27.7
 	github.com/multiformats/go-multibase v0.2.0
 	github.com/polydawn/refmt v0.89.0
@@ -89,6 +89,7 @@ require (
 	github.com/ipfs/go-ipld-legacy v0.2.1 // indirect
 	github.com/ipfs/go-log v1.0.5 // indirect
 	github.com/ipfs/go-log/v2 v2.5.1 // indirect
+	github.com/ipfs/go-merkledag v0.11.0 // indirect
 	github.com/ipfs/go-metrics-interface v0.0.1 // indirect
 	github.com/ipfs/go-peertaskqueue v0.8.1 // indirect
 	github.com/ipfs/go-unixfsnode v1.7.1 // indirect
