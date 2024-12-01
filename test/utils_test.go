@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/stateless-minds/go-ipfs-log/iface"
-	core_iface "github.com/ipfs/kubo/core/coreiface"
+	coreiface "github.com/ipfs/kubo/core/coreiface"
 	"github.com/ipfs/go-datastore"
 	dssync "github.com/ipfs/go-datastore/sync"
 	config "github.com/ipfs/kubo/config"

@@ -8,12 +8,8 @@ import (
 	"sync"
 	"time"
 
-	core_iface "github.com/ipfs/kubo/core/coreiface"
 	"github.com/ipfs/go-cid"
-<<<<<<< HEAD
-=======
 	coreiface "github.com/ipfs/kubo/core/coreiface"
->>>>>>> fc6f3a0f81b0de763896383eb7ed8c0631163cb4
 
 	"github.com/stateless-minds/go-ipfs-log/accesscontroller"
 	"github.com/stateless-minds/go-ipfs-log/entry"
