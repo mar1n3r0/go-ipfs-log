@@ -9,11 +9,11 @@ import (
 	"github.com/stateless-minds/go-ipfs-log/enc"
 	"github.com/ipfs/go-ipld-cbor/encoding"
 
-	core_iface "github.com/ipfs/kubo/core/coreiface"
 	"github.com/ipfs/boxo/path"
 	"github.com/ipfs/go-cid"
 	cbornode "github.com/ipfs/go-ipld-cbor"
 	format "github.com/ipfs/go-ipld-format"
+	coreiface "github.com/ipfs/kubo/core/coreiface"
 	ic "github.com/libp2p/go-libp2p/core/crypto"
 	"github.com/polydawn/refmt/obj/atlas"
 
@@ -230,7 +230,7 @@ func (i *IOCbor) SetDebug(val bool) {
 }
 
 // WriteCBOR writes a CBOR representation of a given object in IPFS' DAG.
-func (i *IOCbor) Write(ctx context.Context, ipfs core_iface.CoreAPI, obj interface{}, opts *iface.WriteOpts) (cid.Cid, error) {
+func (i *IOCbor) Write(ctx context.Context, ipfs coreiface.CoreAPI, obj interface{}, opts *iface.WriteOpts) (cid.Cid, error) {
 	if opts == nil {
 		opts = &iface.WriteOpts{}
 	}
@@ -270,7 +270,7 @@ func (i *IOCbor) Write(ctx context.Context, ipfs core_iface.CoreAPI, obj interfa
 }
 
 // Read reads a CBOR representation of a given object from IPFS' DAG.
-func (i *IOCbor) Read(ctx context.Context, ipfs core_iface.CoreAPI, contentIdentifier cid.Cid) (format.Node, error) {
+func (i *IOCbor) Read(ctx context.Context, ipfs coreiface.CoreAPI, contentIdentifier cid.Cid) (format.Node, error) {
 	return ipfs.Dag().Get(ctx, contentIdentifier)
 }
 
