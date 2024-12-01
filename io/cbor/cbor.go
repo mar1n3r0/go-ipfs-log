@@ -261,7 +261,7 @@ func (i *IOCbor) Write(ctx context.Context, ipfs core_iface.CoreAPI, obj interfa
 	}
 
 	if opts.Pin {
-		if err = ipfs.Pin().Add(ctx, path.IpfsPath(cborNode.Cid())); err != nil {
+		if err = ipfs.Pin().Add(ctx, path.FromCid(cborNode.Cid())); err != nil {
 			return cid.Undef, errmsg.ErrIPFSOperationFailed.Wrap(err)
 		}
 	}
