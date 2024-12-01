@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	core_iface "github.com/ipfs/kubo/core/coreiface"
 	"github.com/ipfs/go-cid"
 	format "github.com/ipfs/go-ipld-format"
+	coreiface "github.com/ipfs/kubo/core/coreiface"
 
 	"github.com/stateless-minds/go-ipfs-log/accesscontroller"
 	"github.com/stateless-minds/go-ipfs-log/identityprovider"
@@ -35,8 +35,8 @@ type FetchOptions struct {
 }
 
 type IO interface {
-	Write(ctx context.Context, ipfs core_iface.CoreAPI, obj interface{}, opts *WriteOpts) (cid.Cid, error)
-	Read(ctx context.Context, ipfs core_iface.CoreAPI, contentIdentifier cid.Cid) (format.Node, error)
+	Write(ctx context.Context, ipfs coreiface.CoreAPI, obj interface{}, opts *WriteOpts) (cid.Cid, error)
+	Read(ctx context.Context, ipfs coreiface.CoreAPI, contentIdentifier cid.Cid) (format.Node, error)
 	DecodeRawEntry(node format.Node, hash cid.Cid, p identityprovider.Interface) (IPFSLogEntry, error)
 	DecodeRawJSONLog(node format.Node) (*JSONLog, error)
 }

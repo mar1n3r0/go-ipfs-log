@@ -4,10 +4,11 @@ import (
 	"context"
 	"encoding/json"
 
-	core_iface "github.com/ipfs/kubo/core/coreiface"
 	dag "github.com/ipfs/boxo/ipld/merkledag"
 	"github.com/ipfs/go-cid"
 	format "github.com/ipfs/go-ipld-format"
+	dag "github.com/ipfs/go-merkledag"
+	coreiface "github.com/ipfs/kubo/core/coreiface"
 
 	"github.com/stateless-minds/go-ipfs-log/errmsg"
 	idp "github.com/stateless-minds/go-ipfs-log/identityprovider"
@@ -20,7 +21,7 @@ type pb struct {
 	refEntry iface.IPFSLogEntry
 }
 
-func (p *pb) Write(ctx context.Context, ipfs core_iface.CoreAPI, obj interface{}, opts *iface.WriteOpts) (cid.Cid, error) {
+func (p *pb) Write(ctx context.Context, ipfs coreiface.CoreAPI, obj interface{}, _ *iface.WriteOpts) (cid.Cid, error) {
 	var err error
 	payload := []byte(nil)
 
@@ -50,7 +51,7 @@ func (p *pb) Write(ctx context.Context, ipfs core_iface.CoreAPI, obj interface{}
 	return node.Cid(), nil
 }
 
-func (p *pb) Read(ctx context.Context, ipfs core_iface.CoreAPI, contentIdentifier cid.Cid) (format.Node, error) {
+func (p *pb) Read(ctx context.Context, ipfs coreiface.CoreAPI, contentIdentifier cid.Cid) (format.Node, error) {
 	node, err := ipfs.Dag().Get(ctx, contentIdentifier)
 	if err != nil {
 		return nil, err
