@@ -3,7 +3,7 @@ package entry // import "github.com/stateless-minds/go-ipfs-log/entry"
 import (
 	"context"
 
-	core_iface "github.com/ipfs/boxo/coreiface"
+	core_iface "github.com/ipfs/kubo/core/coreiface"
 	"github.com/ipfs/go-cid"
 
 	"github.com/stateless-minds/go-ipfs-log/iface"

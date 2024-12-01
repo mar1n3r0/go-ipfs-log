@@ -7,7 +7,7 @@ import (
 	"encoding/json"
 	"sort"
 
-	core_iface "github.com/ipfs/boxo/coreiface"
+	core_iface "github.com/ipfs/kubo/core/coreiface"
 	"github.com/ipfs/go-cid"
 	"github.com/multiformats/go-multibase"
 

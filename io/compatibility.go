@@ -6,7 +6,7 @@ import (
 	"github.com/stateless-minds/go-ipfs-log/entry"
 	"github.com/stateless-minds/go-ipfs-log/iface"
 	"github.com/stateless-minds/go-ipfs-log/io/cbor"
-	core_iface "github.com/ipfs/boxo/coreiface"
+	core_iface "github.com/ipfs/kubo/core/coreiface"
 	"github.com/ipfs/go-cid"
 	format "github.com/ipfs/go-ipld-format"
 )

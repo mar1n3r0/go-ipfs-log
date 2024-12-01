@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 
-	core_iface "github.com/ipfs/boxo/coreiface"
+	core_iface "github.com/ipfs/kubo/core/coreiface"
 	dag "github.com/ipfs/boxo/ipld/merkledag"
 	"github.com/ipfs/go-cid"
 	format "github.com/ipfs/go-ipld-format"

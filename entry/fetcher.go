@@ -8,7 +8,7 @@ import (
 	"github.com/stateless-minds/go-ipfs-log/identityprovider"
 	"github.com/stateless-minds/go-ipfs-log/iface"
 	"github.com/stateless-minds/go-ipfs-log/io/cbor"
-	core_iface "github.com/ipfs/boxo/coreiface"
+	core_iface "github.com/ipfs/kubo/core/coreiface"
 	"github.com/ipfs/go-cid"
 	"golang.org/x/sync/semaphore"
 )
